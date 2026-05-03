@@ -437,12 +437,12 @@ export const supportedActions: Record<string, Record<string, ActionConfig>> = {
       }
     },
     turn_off: {
-      translation_key: 'services.generic.turn_on',
+      translation_key: 'services.generic.turn_off',
       target: {},
       supported_features: 8
     },
     turn_on: {
-      translation_key: 'services.generic.turn_off',
+      translation_key: 'services.generic.turn_on',
       target: {},
       supported_features: 8
     },
