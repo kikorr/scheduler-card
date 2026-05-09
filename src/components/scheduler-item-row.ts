@@ -56,7 +56,7 @@ export class SchedulerItemRow extends LitElement {
           ? html`<ha-switch
               ?checked=${['on', 'triggered'].includes(stateObj.state || '')}
               ?disabled=${stateObj.state == 'completed'}
-              @click=${this._toggleEnableDisable}
+              @change=${this._toggleEnableDisable}
             ></ha-switch>`
           : ''}
       </div>
@@ -118,8 +118,7 @@ export class SchedulerItemRow extends LitElement {
   }
 
   private _toggleEnableDisable(ev: Event) {
-    ev.stopPropagation();
-    const checked = !(ev.target as HTMLInputElement).checked;
+    const checked = (ev.target as HTMLInputElement).checked;
     this.hass.callService('switch', checked ? 'turn_on' : 'turn_off', { entity_id: this.schedule.entity_id });
   }
 
