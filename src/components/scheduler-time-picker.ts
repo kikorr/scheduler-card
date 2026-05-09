@@ -495,6 +495,7 @@ export class SchedulerTimePicker extends LitElement {
     }
     ha-input::part(wa-hint) {
       height: 0;
+      min-height: 0;
     }
     ha-input::part(wa-base) {
       padding: var(--ha-space-1);
