@@ -72,7 +72,9 @@ export class SchedulerTimeslotEditor extends LitElement {
     const segmentWidth = amPm ? 130 : 100;
     if (!fullWidth) return html``;
     let stepSize = Math.ceil(24 / (fullWidth / segmentWidth));
-    while (!allowedStepSizes.includes(stepSize)) stepSize++;
+    // fix: si el ancho es pequeno stepSize sale >12 y el while original no terminaba (freeze).
+    // Clamp al menor stepSize permitido >= calculado (o el maximo). Mismo comportamiento en rango.
+    stepSize = allowedStepSizes.find(s => s >= stepSize) ?? allowedStepSizes[allowedStepSizes.length - 1];
 
     const nums = [0, ...Array.from(Array(24 / stepSize - 1).keys()).map(e => (e + 1) * stepSize), 24];
 

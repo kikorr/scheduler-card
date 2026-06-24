@@ -103,6 +103,7 @@ export enum DisplayItem {
   Name = 'name',
   RelativeTime = 'relative-time',
   AdditionalTasks = 'additional-tasks',
+  AdditionalTaskInfo = 'additional-task-info',
   Time = 'time',
   Days = 'days',
   Entity = 'entity',
