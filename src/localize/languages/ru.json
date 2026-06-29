@@ -128,7 +128,10 @@
         "backend_error": "Нет соединенияс scheduler component. Scheduler component должен быть установлен до применения этой карты.",
         "excluded_items": "{number} исключено {if number is 1} элемент {else} элементов",
         "hide_excluded": "скрыть исключенные элементы",
-        "additional_tasks": "{number} больше {if number is 1} задача {else} задач"
+        "additional_tasks": "{number} больше {if number is 1} задача {else} задач",
+        "additional_task_info": {
+          "no_action": "No action configured"
+        }
       },
       "editor": {
         "repeated_days": "Repeated days",
@@ -226,7 +229,8 @@
               "relative_time": "Time remaining until next action",
               "time": "Configured time for next action",
               "days": "Repeated days of the week",
-              "additional_tasks": "Number of additional tasks"
+              "additional_tasks": "Number of additional tasks",
+              "additional_task_info": "Extra info additional task"
             }
           },
           "show_header_toggle": {

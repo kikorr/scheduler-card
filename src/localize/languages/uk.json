@@ -128,7 +128,10 @@
         "backend_error": "Не вдалося підключитися до компонента планувальника. Перш ніж використовувати цю карту, її потрібно встановити як інтеграцію.",
         "excluded_items": "{number} виключено {if number is 1} елемент {else} елементів",
         "hide_excluded": "сховати виключені елементи",
-        "additional_tasks": "{number} більше {if number is 1} завдання {else} завдань"
+        "additional_tasks": "{number} більше {if number is 1} завдання {else} завдань",
+        "additional_task_info": {
+          "no_action": "No action configured"
+        }
       },
       "editor": {
         "repeated_days": "Repeated days",
@@ -226,7 +229,8 @@
               "relative_time": "Time remaining until next action",
               "time": "Configured time for next action",
               "days": "Repeated days of the week",
-              "additional_tasks": "Number of additional tasks"
+              "additional_tasks": "Number of additional tasks",
+              "additional_task_info": "Extra info additional task"
             }
           },
           "show_header_toggle": {

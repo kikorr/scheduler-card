@@ -128,7 +128,10 @@
         "backend_error": "אין אפשרות להתחבר לרכיב התזמונים. נדרש להתקין את הרכיב באינטגרציה לפני השימוש בכרטיס.",
         "excluded_items": "{number} לא נכלל {if number is 1} פריט {else} פריטים",
         "hide_excluded": "הסתר פריטים לא כלולים",
-        "additional_tasks": "{number} נוסף {if number is 1} משימה {else} משימות"
+        "additional_tasks": "{number} נוסף {if number is 1} משימה {else} משימות",
+        "additional_task_info": {
+          "no_action": "No action configured"
+        }
       },
       "editor": {
         "repeated_days": "ימים לחזרה",
@@ -226,7 +229,8 @@
               "relative_time": "זמן שנותר עד הפעולה הבאה",
               "time": "זמן מוגדר לפעולה הבאה",
               "days": "ימים חוזרים בשבוע",
-              "additional_tasks": "מספר משימות נוספות"
+              "additional_tasks": "מספר משימות נוספות",
+              "additional_task_info": "Extra info additional task"
             }
           },
           "show_header_toggle": {
